@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
     return (
@@ -11,6 +11,13 @@ function Navbar() {
             <div className="navbar-text">
                 <h3>My Portfolio</h3>
             </div>
+
+            <div className="Log-In">
+                <Link className="navbar-link-item" to="/login">
+                    <FontAwesomeIcon icon={faLock} /> Log In
+                </Link>
+            </div>
+
             <div className="navbar-links">
                 <ul>
                     <li>

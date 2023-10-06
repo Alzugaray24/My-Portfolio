@@ -3,7 +3,6 @@ import '../App.css';
 // import image1 from '../assets/images/yo.png';
 // import image2 from '../assets/images/amigos.png';
 // import ComidasFavoritas from './ComidasFavoritas';
-import  Form  from '../components/Form';
 
 function Contact() {
 
@@ -60,12 +59,6 @@ function Contact() {
 
   return (
     <div className='contactContainer'>
-
-    <Form />
-
-
-
-
 
       {/* 
       <div className='descripcion'>
