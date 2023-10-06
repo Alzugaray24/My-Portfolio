@@ -6,7 +6,7 @@ import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Space from './components/Space'
-import Login from './components/Login';
+import SignUp from './components/SignUp';
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
           <Route path='/' element={<Homepage />}></Route>
           <Route path='/about' element={<AboutMe />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
-          <Route path='/login' element={<Login />}></Route>
+          <Route path='/signup' element={<SignUp />}></Route>
       </Routes>
       </div>
       <Space />
