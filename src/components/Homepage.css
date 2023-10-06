@@ -1,0 +1,48 @@
+@media only screen and (max-width: 768px) {
+    .homepage-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .homepage-text{
+        width: 50%;
+    }
+
+    .homepage-text h2{
+        font-size: 40px;
+    }
+
+    .homepage-text h3{
+        font-size: 30px;
+    }
+
+    .homepage-text p{
+        padding: 25px 0 25px 0;
+        font-size: 25px;
+    }
+
+    .homepage-image{
+        width: 50%;
+    }
+  }
+
+  .homepage-text p,
+  .homepage-text h2,
+  .homepage-text h3 {
+      color: white;
+  }
+.homepage-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+}
+
+.homepage-image img{
+    max-width: 100%;
+    height: auto;
+}

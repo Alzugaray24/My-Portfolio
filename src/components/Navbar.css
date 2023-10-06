@@ -1,0 +1,39 @@
+/* Navbar Estilos */
+
+@media only screen and (max-width: 768px) {
+    /* Estilos para pantallas de hasta 768px (si es necesario) */
+  }
+  
+  .navbar-container {
+      background-size: cover;
+      background-repeat: no-repeat;
+      /* opacity: 0.9; */
+      /* filter: blur(3px); */
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+      padding-top: 20px;
+  }
+  
+  .navbar-text h3{
+      color: white;
+      cursor: pointer;
+  }
+  
+  .navbar-links ul{
+      list-style: none;
+      padding: 0;
+  }
+  
+  .navbar-link-item {
+      color: white;
+      font-size: 15px;
+      text-decoration: none;
+      font-size: 18px;
+  }
+  
+  .navbar-link-item:hover,
+  .navbar-text h3:hover {
+      color: #8643f2;
+  }
