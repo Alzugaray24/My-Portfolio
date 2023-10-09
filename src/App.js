@@ -7,6 +7,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Space from './components/Space'
 import SignUp from './components/SignUp';
+import ReactGains from './components/ReactGains';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/about' element={<AboutMe />}></Route>
           <Route path='/contact' element={<Contact />}></Route>
           <Route path='/signup' element={<SignUp />}></Route>
+          <Route path='/apps' element={<ReactGains />}></Route>
       </Routes>
       </div>
       <Space />

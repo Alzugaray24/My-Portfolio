@@ -1,11 +1,12 @@
+import { Divider } from '@chakra-ui/react';
 import '../App.css';
 import Calculator from './calculator';
 
 function ReactGains() {
     return (
-        <div className='aplicaciones'>
+        <div className='apps'>
                 <Calculator />
-                <hr></hr>
+                <Divider />
         </div>
     )
 }

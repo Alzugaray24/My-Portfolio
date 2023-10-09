@@ -1,6 +1,7 @@
 import './Homepage.css'
 import imageMe from '../assets/images/home-main.svg' 
 import { useState } from 'react'
+import { Divider } from '@chakra-ui/react'
 
 function Homepage() {
 
@@ -28,6 +29,7 @@ function Homepage() {
                     <h2>Hi There</h2>
                 <p>I'm <b>Matias Alzugaray</b></p>
                 <h3>{mydata.work}</h3>
+                <Divider />
                 <button onClick={ShowMore} type="button" className="btn btn-lg btn-outline-light" style={{ marginTop: "20px" }}>{mydata.button}</button>
             </div>
             <div className="homepage-image">

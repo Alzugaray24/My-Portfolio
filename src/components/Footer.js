@@ -20,18 +20,15 @@ function Footer() {
                     <FontAwesomeIcon icon={faInstagram} />{" "}
                     <a href="https://www.instagram.com/matias_alzugaray/">Instagram</a>
                 </label>
+                <label>
+                    <FontAwesomeIcon icon={faEnvelope} />{" "}
+                    <a href="mailto:alzugaray1997@gmail.com">Email</a>
+                </label>
             </div>
             <div className="biography">
                 <label>Welcome to my portfolio. I'm
                     passionate about web development and creating user-friendly interfaces. I love to learn new technologies and
                     collaborate on exciting projects.</label>
-            </div>
-            <div className="contact-info">
-                <label>
-                    <FontAwesomeIcon icon={faEnvelope} />{" "}
-                    <a href="mailto:alzugaray1997@gmail.com">Email</a>
-                </label>
-                {/* Agrega ícono de Instagram aquí */}
             </div>
             <div className="skills">
                 <h5>Some of my skills</h5>

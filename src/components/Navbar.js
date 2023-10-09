@@ -3,10 +3,11 @@ import { Link } from "react-router-dom";
 import "../App.css";
 import "./Navbar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHome, faUser, faEnvelope, faLock } from "@fortawesome/free-solid-svg-icons";
+import { faHome, faUser, faEnvelope, faLock, faRocket} from "@fortawesome/free-solid-svg-icons";
 import { MoonIcon, SunIcon, HamburgerIcon  } from "@chakra-ui/icons";
 import { useColorMode, Button, IconButton } from "@chakra-ui/react";
 import {Menu, MenuButton, MenuList, MenuItem } from '@chakra-ui/react'
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
 
@@ -54,6 +55,12 @@ function Navbar() {
                                 <span style={{ marginLeft: "8px" }}>Contact</span>
                             </MenuItem>
                         </Link>
+                        <Link to="/apps">
+                            <MenuItem>
+                                <FontAwesomeIcon icon={faRocket} />{" "}
+                                <span style={{ marginLeft: "8px" }}>Apps</span>
+                            </MenuItem>
+                        </Link>
                     </MenuList>
                 </Menu>
             </div>
@@ -75,11 +82,16 @@ function Navbar() {
                             <FontAwesomeIcon icon={faEnvelope} /> Contact
                         </Link>
                     </li>
+                    <li>
+                        <Link className="navbar-link-item" to="/apps">
+                            <FontAwesomeIcon icon={faRocket} /> Apps
+                        </Link>
+                    </li>
                 </ul>
             </div>
 
             <Button onClick={toggleColorMode}>
-                {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
+                {colorMode === "light" ? <SunIcon /> : <MoonIcon />}
             </Button>
 
         </nav>

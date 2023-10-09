@@ -57,6 +57,7 @@ function Form() {
                             First name <sup>*</sup>
                         </label>
                         <input
+                            className="form-control"
                             value={firstName}
                             onChange={(e) => {
                                 setFirstName(e.target.value);
@@ -67,6 +68,7 @@ function Form() {
                     <div className="field">
                         <label>Last name</label>
                         <input
+                            className="form-control"  // Agregado
                             value={lastName}
                             onChange={(e) => {
                                 setLastName(e.target.value);
@@ -79,6 +81,7 @@ function Form() {
                             Email address <sup>*</sup>
                         </label>
                         <input
+                            className="form-control"  // Agregado
                             value={email}
                             onChange={(e) => {
                                 setEmail(e.target.value);
@@ -91,6 +94,7 @@ function Form() {
                             Password <sup>*</sup>
                         </label>
                         <input
+                            className="form-control"  // Agregado
                             value={password.value}
                             type="password"
                             onChange={(e) => {
@@ -109,7 +113,11 @@ function Form() {
                         <label>
                             Role <sup>*</sup>
                         </label>
-                        <select value={role} onChange={(e) => setRole(e.target.value)}>
+                        <select
+                            className="form-control"  // Agregado
+                            value={role}
+                            onChange={(e) => setRole(e.target.value)}
+                        >
                             <option value="role">Role</option>
                             <option value="individual">Individual</option>
                             <option value="business">Business</option>

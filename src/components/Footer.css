@@ -1,73 +1,64 @@
 /* Estilos para el contenedor principal del footer */
-
-@media only screen and (max-width: 768px) {
-
-    .footer-container{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .biography{
-        display: none;
-    }
-
-    .skills{
-        display: none;
-    }
-}
-
-
-
 .footer-container {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    opacity: 0.7;
+  position: relative;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center; /* Centrar verticalmente */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
 }
-  /* Estilos para las etiquetas de enlace en el footer */
-  .footer-container a {
-    color: white; /* Color de los enlaces */
-    text-decoration: none; /* Eliminar subrayado de los enlaces */
-    margin: 0 10px; /* Espaciado horizontal entre los enlaces */
-  }
-  
-  /* Estilos para el texto del footer */
-  .biography p {
-    font-size: 16px; /* Tamaño de fuente del texto */
-    margin: 10px 0; /* Espaciado vertical del texto */
-  }
-  
-  /* Estilos para la sección de habilidades */
-  .skills {
-    margin-top: 20px; /* Espaciado superior */
-  }
-  
-  /* Estilos para el aviso de derechos de autor */
-  .copyright {
-    margin-top: 20px; /* Espaciado superior */
-    font-size: 12px; /* Tamaño de fuente más pequeño para el aviso de derechos de autor */
-  }
 
-  .biography label {
-    font-size: 16px;
-  }
+/* Estilos para las etiquetas de enlace en el footer */
+.footer-container a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
 
-  .Space {
-    height: 150px;
-  }
+/* Cambiar el color de texto en el hover de los enlaces */
+.footer-container a:hover {
+  color: #8643f2;
+}
 
-/* Cambiar el color de fondo en el hover de los íconos de las redes sociales */
-.social-medias label:hover a {
-    color: #8643f2;
-  }
-  
-  /* Cambiar el color de fondo en el hover del enlace de correo electrónico */
-  .contact-info label:hover a {
-    color: #8643f2;
-  }
+/* Estilos para las secciones internas */
+.biography, .skills, .copyright, .social-medias {
+  flex: 1;
+  max-width: 300px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+/* Estilos para los íconos de redes sociales */
+.social-medias label {
+  font-size: 24px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para el ícono de correo electrónico */
+.contact-info label {
+  font-size: 24px;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para los íconos de redes sociales en el hover */
+.social-medias label:hover {
+  color: #8643f2;
+}
+
+/* Estilos para el ícono de correo electrónico en el hover */
+.contact-info label:hover {
+  color: #8643f2;
+}
